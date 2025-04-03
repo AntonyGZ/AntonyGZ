@@ -2,7 +2,7 @@
 🚀 Desarrollador de software | ⚡ Apasionado por la tecnología   | Siempre aprendiendo
 
 [![Mis Repositorios](https://img.shields.io/badge/GitHub-Repositorios-181717?style=for-the-badge&logo=github)](https://github.com/AntonyGZ?tab=repositories)
-
+🔗 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/antonygz1605) 
 
 ## 📌 Portafolios del Equipo  
 Aquí están los enlaces a los portafolios de mis compañeros:  
@@ -33,5 +33,3 @@ Aquí están los enlaces a los portafolios de mis compañeros:
 
 ## 📫 Contacto  
 ✉️ Email: agmez614@gmail.com  
-🔗 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/antonygz1605) 
-
