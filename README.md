@@ -16,5 +16,5 @@ Aquí están los enlaces a los portafolios de mis compañeros:
 
 ## 📫 Contacto  
 ✉️ Email: agmez614@gmail.com  
-🔗 LinkedIn: [Mi Perfil](https://linkedin.com/in/AntonyGZ)  
+🔗 LinkedIn: [Mi Perfil](https://linkedin.com/in/AntonyGomez)  
 
