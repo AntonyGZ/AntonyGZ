@@ -17,6 +17,13 @@ Aquí están los enlaces a los portafolios de mis compañeros:
 ## 🔗 Mi GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tuusuario&show_icons=true&theme=dark)
 
+## 🔧 Tecnologías y Herramientas  
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+
+
 ## 📂 Mis Proyectos Destacados  
 - 🛒 [Sistema de Socios Mass](https://github.com/tuusuario/sistema-socios-mass)  
 - 🍽️ [Gestión de Restaurantes](https://github.com/tuusuario/gestion-restaurantes)  
