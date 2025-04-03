@@ -1,16 +1,20 @@
-## Hi there 👋
+# 🌟 ¡Hola, soy Antony Gomez!  
+🚀 Desarrollador de software | ⚡ Apasionado por la tecnología  
 
-<!--
-**AntonyGZ/AntonyGZ** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 📌 Portafolios del Equipo  
+Aquí están los enlaces a los portafolios de mis compañeros:  
+- [📊 VICTOR - Analista de Datos](https://carlos.github.io/) 
+- [🎨 EDWIN - Diseñador UI/UX](https://juan.github.io/)  
+- [💻 YURI - Full Stack Developer](https://ana.github.io/)  
+- [📊 CARLOS - Analista de Datos](https://carlos.github.io/)
+ 
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📂 Mis Proyectos Destacados  
+- 🛒 [Sistema de Socios Mass](https://github.com/tuusuario/sistema-socios-mass)  
+- 🍽️ [Gestión de Restaurantes](https://github.com/tuusuario/gestion-restaurantes)  
+
+## 📫 Contacto  
+✉️ Email: agmez614@gmail.com  
+🔗 LinkedIn: [Mi Perfil](https://linkedin.com/in/AntonyGZ)  
+
