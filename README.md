@@ -15,7 +15,7 @@ Aquí están los enlaces a los portafolios de mis compañeros:
 - Node.js
 
 ## 🔗 Mi GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tuusuario&show_icons=true&theme=dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AntonyGZ&show_icons=true&theme=dark)
 
 ## 🔧 Tecnologías y Herramientas  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
@@ -30,5 +30,5 @@ Aquí están los enlaces a los portafolios de mis compañeros:
 
 ## 📫 Contacto  
 ✉️ Email: agmez614@gmail.com  
-🔗 LinkedIn: [Mi Perfil](https://linkedin.com/in/AntonyGomez)  
+🔗 LinkedIn: [Mi Perfil](www.linkedin.com/in/antony-gomez-26877629b)  
 
