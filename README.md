@@ -1,7 +1,7 @@
 # 🌟 ¡Hola, soy Antony Gomez!  
 🚀 Desarrollador de software | ⚡ Apasionado por la tecnología   | Siempre aprendiendo
 
-[![Portafolio](https://img.shields.io/badge/Mi_Portafolio-FF5722?style=flat&logo=Google-Chrome&logoColor=white)](https://code-lab.github.io/)
+[![Mis Repositorios](https://img.shields.io/badge/GitHub-Repositorios-181717?style=for-the-badge&logo=github)](https://github.com/AntonyGZ?tab=repositories)
 
 
 ## 📌 Portafolios del Equipo  
