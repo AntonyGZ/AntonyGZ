@@ -93,7 +93,7 @@ body {
             div.className = 'repo-card';
             div.innerHTML = `
                 <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                <p>${repo.description || 'Sin descripción'}</p>
+                <p>${repo.description}</p>
             `;
             reposList.appendChild(div);
         });
