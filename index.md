@@ -215,7 +215,7 @@ footer .social-links a:hover {
                 <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:60450594@continental.edu.pe"><i class="fas fa-envelope"></i></a>
                 <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="www.linkedin.com/in/antonygz1605/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </div>
