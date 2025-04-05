@@ -25,13 +25,15 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 30px;
     background-color: #2c3e50;
-    justify-content: space-between;
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 10;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
 }
 
 .profile-info {
@@ -40,7 +42,6 @@ header {
     flex-direction: column;
     text-align: center;
     max-width: 300px;
-    margin-right: 50px;
 }
 
 .profile-info img {
@@ -71,14 +72,15 @@ header {
 }
 
 .nav-links {
-    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
 }
 
 .nav-links a {
     color: #f1c40f;
-    margin-left: 20px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .nav-links a:hover {
@@ -86,14 +88,7 @@ header {
 }
 
 main {
-    width: 100%;
-    max-width: 1200px;
-    margin: 150px auto;
-    padding: 0 20px;
-}
-
-h1, h2, h3 {
-    color: #f1c40f;
+    padding-top: 160px; /* Ajustamos el contenido principal para que no se superponga al header fijo */
 }
 
 section {
@@ -125,6 +120,18 @@ section h2 {
 
 .repo-card:hover {
     transform: translateY(-5px);
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    width: 48%;
+    border-radius: 10px;
 }
 
 footer {
@@ -162,35 +169,6 @@ input[type="text"] {
     border: none;
     font-size: 1em;
 }
-
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-    .nav-links {
-        display: block;
-        text-align: left;
-    }
-
-    .profile-info {
-        max-width: 100%;
-    }
-
-    .repo-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.video-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.video-container iframe {
-    width: 48%;
-    border-radius: 10px;
-}
 </style>
 
 <header>
@@ -224,7 +202,7 @@ input[type="text"] {
     <section id="repos">
         <h2>🚀 Repositorios Destacados</h2>
         <div class="repo-container" id="repos-list">
-            <p>Cargando repositorios...</p>
+            <!-- Los repositorios de GitHub se cargarán dinámicamente aquí -->
         </div>
         <p>👉 <a href="https://github.com/AntonyGZ?tab=repositories" target="_blank">Ver todos los repositorios</a></p>
     </section>
@@ -274,4 +252,26 @@ input[type="text"] {
     <section>
         <h2>📬 Contacto y Redes Sociales</h2>
         <div class="social-links">
-            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i> Git
+            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+</main>
+
+<script>
+    // Cargar repositorios de GitHub
+    fetch('https://api.github.com/users/AntonyGZ/repos')
+        .then(response => response.json())
+        .then(data => {
+            const reposList = document.getElementById('repos-list');
+            data.forEach(repo => {
+                const repoCard = document.createElement('div');
+                repoCard.className = 'repo-card';
+                repoCard.innerHTML = `
+                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                    <p>${repo.description || 'No description available'}</p>
+                `;
+                reposList.appendChild(repoCard);
+            });
+        })
+        .catch(error => console.log('Error fetching repositories:', error));
+</script>
