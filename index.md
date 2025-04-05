@@ -197,11 +197,6 @@ html {
     color: #fff;
 }
 
-.header-logo {
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
-}
 </style>
 
 <header>
@@ -225,7 +220,6 @@ html {
         <a href="#about"><i class="fas fa-user"></i> About</a>
         <a href="#posts"><i class="fas fa-file-alt"></i> Posts</a>
     </div>
-    <img src="https://example.com/logo.png" alt="Logo" class="header-logo"> <!-- Imagen agregada -->
 </header>
 
 <main>
@@ -284,7 +278,25 @@ html {
 
     <section>
         <h2>📬 Contacto y Redes Sociales</h2>
-        <div class="social-links">
-            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://wa
+        <a href="#socials" class="socials-link">Ir a mis redes sociales</a>
+    </section>
+</main>
+
+<script>
+    // Cargar repositorios de GitHub
+    fetch('https://api.github.com/users/AntonyGZ/repos')
+        .then(response => response.json())
+        .then(data => {
+            const reposList = document.getElementById('repos-list');
+            data.forEach(repo => {
+                const repoCard = document.createElement('div');
+                repoCard.className = 'repo-card';
+                repoCard.innerHTML = `
+                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                    <p>${repo.description || 'Este repositorio es parte de mis proyectos en desarrollo y experimentación.'}</p>
+                `;
+                reposList.appendChild(repoCard);
+            });
+        })
+        .catch(error => console.log('Error fetching repositories:', error));
+</script>
