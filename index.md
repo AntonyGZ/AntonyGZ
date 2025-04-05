@@ -6,10 +6,12 @@ title: Antony Gomez
 <head>
     <!-- Agregar Font Awesome para los íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tipografía moderna y profesional -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); /* Fuente similar a la de Matt Farley */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Inter:wght@400;600&display=swap'); /* Tipografía profesional */
 
 body {
     background: linear-gradient(135deg, #4E6B8E, #A1C4E8); /* Fondo profesional con gradiente */
@@ -26,6 +28,10 @@ header {
     padding: 30px;
     background-color: #2c3e50;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
 
 .profile-info {
@@ -82,7 +88,7 @@ header {
 main {
     width: 100%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 150px auto;
     padding: 0 20px;
 }
 
@@ -173,6 +179,18 @@ input[type="text"] {
         align-items: center;
     }
 }
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    width: 48%;
+    border-radius: 10px;
+}
 </style>
 
 <header>
@@ -194,7 +212,6 @@ input[type="text"] {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#categories">Categories</a>
-        <a href="#tags">Tags</a>
         <a href="#posts">Posts</a>
     </div>
 </header>
@@ -203,6 +220,14 @@ input[type="text"] {
     <div class="search-box">
         <input type="text" placeholder="Buscar en la página...">
     </div>
+
+    <section id="repos">
+        <h2>🚀 Repositorios Destacados</h2>
+        <div class="repo-container" id="repos-list">
+            <p>Cargando repositorios...</p>
+        </div>
+        <p>👉 <a href="https://github.com/AntonyGZ?tab=repositories" target="_blank">Ver todos los repositorios</a></p>
+    </section>
 
     <section id="home">
         <h2>👋 Bienvenido</h2>
@@ -224,9 +249,17 @@ input[type="text"] {
         </ul>
     </section>
 
-    <section id="tags">
-        <h2>🏷️ Tags</h2>
-        <p>#HTML #CSS #JavaScript #Jekyll #GitHubPages #Trading #Automatización #ProyectosPersonales #Portafolio</p>
+    <section id="trading">
+        <h2>📊 Análisis Técnico y Trading</h2>
+        <p>El análisis técnico y el trading son una de mis grandes pasiones. Actualmente, estoy estudiando estos temas y aplicando técnicas para tomar decisiones en el mercado financiero. A través de herramientas como gráficos y estadísticas, busco entender los patrones y las mejores oportunidades de inversión. ¡Espero seguir aprendiendo y compartir más sobre este emocionante campo!</p>
+    </section>
+
+    <section id="videos">
+        <h2>📺 Videos sobre Trading</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/7qglzFYh0Jo" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/kz-vjY9FGwI" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
 
     <section id="posts">
@@ -238,30 +271,7 @@ input[type="text"] {
         </ul>
     </section>
 
-    <section id="trading">
-        <h2>📊 Análisis Técnico y Trading</h2>
-        <p>El análisis técnico y el trading son una de mis grandes pasiones. Actualmente, estoy estudiando estos temas y aplicando técnicas para tomar decisiones en el mercado financiero. A través de herramientas como gráficos y estadísticas, busco entender los patrones y las mejores oportunidades de inversión. ¡Espero seguir aprendiendo y compartir más sobre este emocionante campo!</p>
-        <img src="https://via.placeholder.com/600x300?text=Trading+Image" alt="Imagen de Trading" style="width: 100%; border-radius: 10px; margin-top: 20px;">
-    </section>
-
-    <section>
-        <h2>🚀 Proyectos Destacados</h2>
-        <div class="repo-container" id="repos-list">
-            <p>Cargando repositorios...</p>
-        </div>
-        <p>👉 <a href="https://github.com/AntonyGZ?tab=repositories" target="_blank">Ver todos los repositorios</a></p>
-    </section>
-
     <section>
         <h2>📬 Contacto y Redes Sociales</h2>
         <div class="social-links">
-            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>
+            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i> Git
