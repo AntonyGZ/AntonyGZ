@@ -209,11 +209,11 @@ footer .social-links a:hover {
     <div class="profile-info">
         <img src="https://github.com/AntonyGZ.png" alt="Foto de perfil">
         <div>
-            <h1>Antony Gomez</h1>
+            <h1></h1>
             <p>Ingeniero de Sistemas | Desarrollador de Software | Entusiasta de la tecnología</p>
             <div class="social-links">
                 <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:60450594@continental.edu.pe"><i class="fas fa-envelope"></i></a>
                 <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
