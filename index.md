@@ -244,7 +244,7 @@ footer .social-links a:hover {
         <p>Hola, soy Antony Gómez. Estudiante de Ingeniería de Sistemas apasionado por la tecnología y la programación. Aquí comparto mis proyectos, ideas y aprendizajes. ¡Explora y conecta conmigo!</p>
     </section>
 
-    <section id="acerca de mi">
+    <section id="sobre mi">
         <h2>📌 Sobre mí</h2>
         <p>Soy estudiante de Ingeniería en Sistemas con una pasión por el desarrollo de software y la programación. Me encanta enfrentarme a nuevos desafíos tecnológicos, y me esfuerzo constantemente por expandir mis conocimientos en este fascinante mundo digital.
 Mi enfoque principal es la creación de soluciones innovadoras a través de código, pero también soy un entusiasta del trading, un campo que he comenzado a explorar con curiosidad y dedicación. A través del aprendizaje continuo, estoy perfeccionando mis habilidades para comprender y aplicar estrategias financieras, lo que me permite combinar mi pasión por la tecnología con nuevas oportunidades de crecimiento profesional.
@@ -261,7 +261,7 @@ Mi objetivo es colaborar con personas que también estén interesadas en aprende
         </div>
     </section>
 
-    <section id="categorias">
+    <section id="categorías">
         <h2>🗂️ Categorías</h2>
         <ul>
             <li>Desarrollo de Software</li>
