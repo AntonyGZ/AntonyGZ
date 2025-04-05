@@ -3,13 +3,18 @@ layout: default
 title: Antony Gomez
 ---
 
+<head>
+    <!-- Agregar Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 body {
     background-color: #121212;
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -23,11 +28,17 @@ header {
 .profile-info {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 .profile-info img {
-    width: 100px;
+    width: 120px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.profile-info h1 {
+    margin: 0;
+    font-size: 2em;
 }
 .nav-links {
     text-align: right;
@@ -82,6 +93,7 @@ a {
     margin: 0 10px;
     color: #f1c40f;
     text-decoration: none;
+    font-size: 1.5em;
 }
 .social-links a:hover {
     text-decoration: underline;
@@ -96,6 +108,18 @@ input[type="text"] {
     border-radius: 5px;
     border: none;
 }
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .nav-links {
+        display: block;
+        text-align: left;
+    }
+    .repo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 </style>
 
 <header>
@@ -104,6 +128,13 @@ input[type="text"] {
         <div>
             <h1>Antony Gomez</h1>
             <p>Ingeniero de Sistemas | Desarrollador de Software | Entusiasta de la tecnología</p>
+            <!-- Redes sociales debajo de la foto -->
+            <div class="social-links">
+                <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </div>
     <div class="nav-links">
@@ -165,10 +196,10 @@ input[type="text"] {
     <section>
         <h2>📬 Contacto y Redes Sociales</h2>
         <div class="social-links">
-            <a href="https://github.com/AntonyGZ" target="_blank">GitHub</a>
-            <a href="mailto:antonygomez0512@gmail.com">Email</a>
-            <a href="https://wa.me/51942805223" target="_blank">WhatsApp</a>
-            <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
     </section>
 </main>
