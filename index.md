@@ -197,6 +197,20 @@ html {
     color: #fff;
 }
 
+footer .social-links {
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #f1c40f;
+    font-size: 1.5em;
+}
+
+footer .social-links a:hover {
+    color: #fff;
+}
+
 </style>
 
 <header>
@@ -278,9 +292,24 @@ html {
 
     <section>
         <h2>📬 Contacto y Redes Sociales</h2>
-        <a href="#socials" class="socials-link">Ir a mis redes sociales</a>
+        <div class="social-links">
+            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </section>
 </main>
+
+<footer>
+    <p>&copy; 2025 Antony Gomez. Todos los derechos reservados.</p>
+    <div class="social-links">
+        <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
 
 <script>
     // Cargar repositorios de GitHub
