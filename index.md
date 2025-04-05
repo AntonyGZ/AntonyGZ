@@ -9,104 +9,152 @@ title: Antony Gomez
 </head>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); /* Fuente similar a la de Matt Farley */
 
 body {
-    background-color: #121212;
+    background: linear-gradient(135deg, #4E6B8E, #A1C4E8); /* Fondo profesional con gradiente */
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
+
 header {
     display: flex;
     align-items: center;
-    padding: 20px;
-    background-color: #1e1e1e;
+    padding: 30px;
+    background-color: #2c3e50;
     justify-content: space-between;
 }
+
 .profile-info {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    max-width: 300px;
+    margin-right: 50px;
 }
+
 .profile-info img {
     width: 120px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
+
 .profile-info h1 {
     margin: 0;
-    font-size: 2em;
-}
-.nav-links {
-    text-align: right;
-}
-.nav-links a {
-    color: #f1c40f;
-    margin-left: 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.nav-links a:hover {
-    text-decoration: underline;
-}
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-h1, h2, h3 {
+    font-size: 2.5em;
     color: #f1c40f;
 }
-section {
-    margin-bottom: 50px;
+
+.profile-info p {
+    font-size: 1.2em;
 }
-.repo-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-.repo-card {
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
-}
-.repo-card:hover {
-    transform: translateY(-5px);
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1e1e1e;
-    margin-top: 40px;
-}
-a {
-    color: #f1c40f;
-}
+
 .social-links a {
     margin: 0 10px;
     color: #f1c40f;
     text-decoration: none;
     font-size: 1.5em;
 }
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links a {
+    color: #f1c40f;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: #f1c40f;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.repo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.repo-card {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    margin-top: 40px;
+    color: #fff;
+}
+
+a {
+    color: #f1c40f;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #f1c40f;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
 .social-links a:hover {
     text-decoration: underline;
 }
+
 .search-box {
     text-align: center;
     margin-bottom: 30px;
 }
+
 input[type="text"] {
     padding: 10px;
-    width: 50%;
+    width: 60%;
     border-radius: 5px;
     border: none;
+    font-size: 1em;
 }
 
 /* Estilos Responsivos */
@@ -115,6 +163,11 @@ input[type="text"] {
         display: block;
         text-align: left;
     }
+
+    .profile-info {
+        max-width: 100%;
+    }
+
     .repo-container {
         flex-direction: column;
         align-items: center;
@@ -185,6 +238,12 @@ input[type="text"] {
         </ul>
     </section>
 
+    <section id="trading">
+        <h2>📊 Análisis Técnico y Trading</h2>
+        <p>El análisis técnico y el trading son una de mis grandes pasiones. Actualmente, estoy estudiando estos temas y aplicando técnicas para tomar decisiones en el mercado financiero. A través de herramientas como gráficos y estadísticas, busco entender los patrones y las mejores oportunidades de inversión. ¡Espero seguir aprendiendo y compartir más sobre este emocionante campo!</p>
+        <img src="https://via.placeholder.com/600x300?text=Trading+Image" alt="Imagen de Trading" style="width: 100%; border-radius: 10px; margin-top: 20px;">
+    </section>
+
     <section>
         <h2>🚀 Proyectos Destacados</h2>
         <div class="repo-container" id="repos-list">
@@ -205,25 +264,4 @@ input[type="text"] {
 </main>
 
 <footer>
-    <p>💡 Desarrollado con Jekyll y GitHub Pages por Antony Gomez</p>
-</footer>
-
-<script>
-    async function loadRepos() {
-        const response = await fetch('https://api.github.com/users/AntonyGZ/repos');
-        const repos = await response.json();
-        const reposList = document.getElementById('repos-list');
-        reposList.innerHTML = '';
-
-        repos.slice(0, 6).forEach(repo => {
-            const div = document.createElement('div');
-            div.className = 'repo-card';
-            div.innerHTML = `
-                <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                <p>${repo.description || 'Sin descripción'}</p>
-            `;
-            reposList.appendChild(div);
-        });
-    }
-    loadRepos();
-</script>
+    <p>
