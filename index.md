@@ -291,9 +291,6 @@ Mi objetivo es colaborar con personas que también estén interesadas en aprende
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2025 Antony Gomez. Todos los derechos reservados.</p>
-</footer>
 
 <script>
     fetch('https://api.github.com/users/AntonyGZ/repos')
