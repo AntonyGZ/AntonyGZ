@@ -262,4 +262,57 @@ html {
         <ul>
             <li>Desarrollo de Software</li>
             <li>Análisis Técnico de Trading</li>
-            <li
+                        <li>Automatización</li>
+            <li>Proyectos Personales</li>
+        </ul>
+    </section>
+
+    <section id="posts">
+        <h2>📝 Posts Destacados</h2>
+        <div class="repo-container">
+            <!-- Aquí puedes agregar tus posts o artículos relacionados -->
+            <div class="repo-card">
+                <h3><a href="#">Introducción al Análisis Técnico</a></h3>
+                <p>Un post sobre las bases del análisis técnico, cómo leer gráficos y utilizar herramientas de trading.</p>
+            </div>
+            <div class="repo-card">
+                <h3><a href="#">Proyecto de Software para Restaurante</a></h3>
+                <p>Exploración del sistema de gestión de restaurantes en el que se integra tecnología de tablets y pizarras interactivas.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Antony Gómez. Todos los derechos reservados.</p>
+    <div class="social-links">
+        <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+<script>
+    // Función para cargar los repositorios de GitHub
+    const reposList = document.getElementById("repos-list");
+
+    fetch('https://api.github.com/users/AntonyGZ/repos')
+        .then(response => response.json())
+        .then(repos => {
+            repos.forEach(repo => {
+                let repoCard = document.createElement("div");
+                repoCard.classList.add("repo-card");
+                repoCard.innerHTML = `
+                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                    <p>${repo.description ? repo.description : 'Sin descripción'}</p>
+                `;
+                reposList.appendChild(repoCard);
+            });
+        })
+        .catch(error => console.log('Error cargando los repositorios: ', error));
+</script>
+
+</body>
+</html>
