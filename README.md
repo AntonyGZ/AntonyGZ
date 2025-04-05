@@ -1,8 +1,7 @@
 # 🌟 ¡Hola, soy Antony Gomez!  
 🚀 Desarrollador de software | ⚡ Apasionado por la tecnología   |  Siempre aprendiendo
 
-![MI PORTAFOLIO PERSONAL](https://img.shields.io/badge/MI%20PORTAFOLIO%20PERSONAL-FFA500?style=for-the-badge&logo=github&logoColor=white&link=https://antonygz.github.io/AntonyGZ/#posts)
-https://antonygz.github.io/AntonyGZ/#posts
+![MI PORTAFOLIO PERSONAL](https://img.shields.io/badge/MI%20PORTAFOLIO%20PERSONAL-FFA500?style=for-the-badge&logo=github&logoColor=white&link=[https://antonygz.github.io/AntonyGZ/#posts](https://antonygz.github.io/AntonyGZ/#posts))
 [![Mis Repositorios](https://img.shields.io/badge/GitHub-Repositorios-181717?style=for-the-badge&logo=github)](https://github.com/AntonyGZ?tab=repositories)
 🔗 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/antonygz1605) 
 
