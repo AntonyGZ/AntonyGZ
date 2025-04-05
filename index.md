@@ -227,17 +227,17 @@ html {
         <input type="text" placeholder="Buscar en la página...">
     </div>
 
+    <section id="home">
+        <h2>👋 Bienvenido</h2>
+        <p>Hola, soy Antony Gómez. Estudiante de Ingeniería de Sistemas apasionado por la tecnología y la programación. Aquí comparto mis proyectos, ideas y aprendizajes. ¡Explora y conecta conmigo!</p>
+    </section>
+
     <section id="repos">
         <h2>🚀 Repositorios Destacados</h2>
         <div class="repo-container" id="repos-list">
             <!-- Los repositorios de GitHub se cargarán dinámicamente aquí -->
         </div>
         <p>👉 <a href="https://github.com/AntonyGZ?tab=repositories" target="_blank">Ver todos los repositorios</a></p>
-    </section>
-
-    <section id="home">
-        <h2>👋 Bienvenido</h2>
-        <p>Hola, soy Antony Gómez. Estudiante de Ingeniería de Sistemas apasionado por la tecnología y la programación. Aquí comparto mis proyectos, ideas y aprendizajes. ¡Explora y conecta conmigo!</p>
     </section>
 
     <section id="about">
@@ -260,32 +260,26 @@ html {
     <section id="categories">
         <h2>🗂️ Categorías</h2>
         <ul>
-            <li>Desarrollo de Software</li>
-            <li>Análisis Técnico de Trading</li>
-                        <li>Automatización</li>
-            <li>Proyectos Personales</li>
+            <li><a href="#software-development">Desarrollo de Software</a></li>
+                        <li><a href="#trading">Análisis Técnico de Trading</a></li>
+            <li><a href="#proyectos">Proyectos Personales</a></li>
+            <li><a href="#academia">Academia</a></li>
+            <li><a href="#tutoriales">Tutoriales</a></li>
+            <li><a href="#ideas">Ideas y Conceptos</a></li>
         </ul>
     </section>
 
     <section id="posts">
         <h2>📝 Posts Destacados</h2>
         <div class="repo-container">
-            <!-- Aquí puedes agregar tus posts o artículos relacionados -->
-            <div class="repo-card">
-                <h3><a href="#">Introducción al Análisis Técnico</a></h3>
-                <p>Un post sobre las bases del análisis técnico, cómo leer gráficos y utilizar herramientas de trading.</p>
-            </div>
-            <div class="repo-card">
-                <h3><a href="#">Proyecto de Software para Restaurante</a></h3>
-                <p>Exploración del sistema de gestión de restaurantes en el que se integra tecnología de tablets y pizarras interactivas.</p>
-            </div>
+            <!-- Aquí se mostrarán los posts si se agregan dinámicamente más tarde -->
         </div>
     </section>
 
 </main>
 
 <footer>
-    <p>© 2025 Antony Gómez. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Antony Gomez. Todos los derechos reservados.</p>
     <div class="social-links">
         <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
         <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -293,26 +287,3 @@ html {
         <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
 </footer>
-
-<script>
-    // Función para cargar los repositorios de GitHub
-    const reposList = document.getElementById("repos-list");
-
-    fetch('https://api.github.com/users/AntonyGZ/repos')
-        .then(response => response.json())
-        .then(repos => {
-            repos.forEach(repo => {
-                let repoCard = document.createElement("div");
-                repoCard.classList.add("repo-card");
-                repoCard.innerHTML = `
-                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                    <p>${repo.description ? repo.description : 'Sin descripción'}</p>
-                `;
-                reposList.appendChild(repoCard);
-            });
-        })
-        .catch(error => console.log('Error cargando los repositorios: ', error));
-</script>
-
-</body>
-</html>
