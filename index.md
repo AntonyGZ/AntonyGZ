@@ -256,7 +256,9 @@ footer .social-links a:hover {
 
     <section id="about">
         <h2>📌 Sobre mí</h2>
-        <p>Me encuentro en constante aprendizaje, desarrollando proyectos personales y académicos relacionados con software, automatización y análisis técnico para trading. Mi objetivo es crear soluciones prácticas y accesibles para usuarios y empresas.</p>
+        <p>Soy estudiante de Ingeniería en Sistemas con una pasión por el desarrollo de software y la programación. Me encanta enfrentarme a nuevos desafíos tecnológicos, y me esfuerzo constantemente por expandir mis conocimientos en este fascinante mundo digital.
+Mi enfoque principal es la creación de soluciones innovadoras a través de código, pero también soy un entusiasta del trading, un campo que he comenzado a explorar con curiosidad y dedicación. A través del aprendizaje continuo, estoy perfeccionando mis habilidades para comprender y aplicar estrategias financieras, lo que me permite combinar mi pasión por la tecnología con nuevas oportunidades de crecimiento profesional.
+Mi objetivo es colaborar con personas que también estén interesadas en aprender y desarrollar juntos, enfrentando proyectos que nos permitan crecer como profesionales, compartir ideas y construir soluciones que realmente marquen la diferencia. Si buscas a alguien comprometido, curioso y con muchas ganas de aprender y enseñar, ¡me encantaría conectar contigo!</p>
 
         <!-- Agregar la sección de Trading dentro de "Acerca de mí" -->
         <div class="sub-box">
@@ -303,7 +305,6 @@ footer .social-links a:hover {
 
 <footer>
     <p>&copy; 2025 Antony Gomez. Todos los derechos reservados.</p>
-    </div>
 </footer>
 
 <script>
