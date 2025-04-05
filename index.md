@@ -3,73 +3,101 @@ layout: default
 title: Antony Gomez
 ---
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+<head>
+    <!-- Agregar Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Agregar Google Fonts: Montserrat Regular -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+</head>
 
+<style>
+/* Cambiar la tipografía global a Montserrat Regular */
 body {
-    background-color: #121212;
+    background: linear-gradient(135deg, #4E6B8E, #A1C4E8); /* Fondo profesional con gradiente */
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Aplicar Montserrat Regular a todo el cuerpo */
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
     align-items: center;
-    padding: 20px;
-    background-color: #1e1e1e;
     justify-content: space-between;
+    padding: 30px;
+    background-color: #2c3e50;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .profile-info {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 300px;
+    margin-right: 50px; /* Asegurar espacio entre la imagen de perfil y el menú */
 }
 
 .profile-info img {
-    width: 100px;
+    width: 120px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #f1c40f;
+}
+
+.profile-info p {
+    font-size: 1.2em;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #f1c40f;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social-links a:hover {
+    color: #fff;
 }
 
 .nav-links {
-    text-align: right;
     display: flex;
     align-items: center;
+    gap: 20px;
+    font-weight: bold;
 }
 
 .nav-links a {
     color: #f1c40f;
-    margin-left: 15px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .nav-links a:hover {
     text-decoration: underline;
 }
 
-/* Imagen o icono agregado junto a las pestañas */
-.nav-links img {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-}
-
-.main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-h1, h2, h3 {
-    color: #f1c40f;
+main {
+    padding-top: 160px; /* Ajustamos el contenido principal para que no se superponga al header */
 }
 
 section {
-    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-top: 0;
 }
 
 .repo-container {
@@ -80,7 +108,7 @@ section {
 }
 
 .repo-card {
-    background-color: #1e1e1e;
+    background-color: #34495e;
     padding: 20px;
     border-radius: 10px;
     width: 250px;
@@ -95,8 +123,9 @@ section {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: #2c3e50;
     margin-top: 40px;
+    color: #fff;
 }
 
 a {
@@ -107,6 +136,7 @@ a {
     margin: 0 10px;
     color: #f1c40f;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 .social-links a:hover {
@@ -120,49 +150,51 @@ a {
 
 input[type="text"] {
     padding: 10px;
-    width: 50%;
+    width: 60%;
     border-radius: 5px;
     border: none;
+    font-size: 1em;
 }
 
-/* Estilo de los enlaces */
-.nav-links a, .social-links a, .repo-card h3 a {
-    color: #ffffff;
-}
-
-.nav-links a:hover, .social-links a:hover, .repo-card h3 a:hover, #repos-list a:hover, .post a:hover {
-    color: #f1c40f;
-}
-
-/* Efectos para Post Destacados y Contacto y Redes Sociales */
-.post a, .social-links a {
-    color: #ffffff;
-}
-
-.post a:hover, .social-links a:hover {
-    color: #000000;
-}
-
-/* Estilo para los videos */
-.video-container {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.video-container iframe {
-    width: 48%;
+/* Estilo para el cuadro adicional en la sección de "Acerca de mí" */
+.sub-box {
+    background-color: #34495e;
+    padding: 15px;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
-/* Estilo de iconos en el footer */
-.footer-icons a {
+/* Agregar un estilo de desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para las pestañas con íconos */
+.nav-links a {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links a i {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+/* Estilos de los títulos de los repositorios */
+.repo-card h3 a {
     color: #f1c40f;
-    margin: 0 10px;
+    text-decoration: none;
 }
 
-.footer-icons a:hover {
-    color: #ffffff;
+.repo-card h3 a:hover {
+    color: #fff;
+}
+
+/* Estilo para los íconos de las pestañas */
+.nav-links a:hover {
+    color: #fff;
 }
 
 </style>
@@ -173,15 +205,20 @@ input[type="text"] {
         <div>
             <h1>Antony Gomez</h1>
             <p>Ingeniero de Sistemas | Desarrollador de Software | Entusiasta de la tecnología</p>
+            <!-- Redes sociales debajo de la foto -->
+            <div class="social-links">
+                <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </div>
     <div class="nav-links">
-        <!-- Imagen o ícono agregado aquí -->
-        <img src="https://via.placeholder.com/40" alt="Icono de Página">
         <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="#categories"><i class="fas fa-th"></i> Categories</a>
         <a href="#about"><i class="fas fa-user"></i> About</a>
-        <a href="#categories"><i class="fas fa-list"></i> Categories</a>
-        <a href="#posts"><i class="fas fa-pen"></i> Posts</a>
+        <a href="#posts"><i class="fas fa-file-alt"></i> Posts</a>
     </div>
 </header>
 
@@ -190,6 +227,14 @@ input[type="text"] {
         <input type="text" placeholder="Buscar en la página...">
     </div>
 
+    <section id="repos">
+        <h2>🚀 Repositorios Destacados</h2>
+        <div class="repo-container" id="repos-list">
+            <!-- Los repositorios de GitHub se cargarán dinámicamente aquí -->
+        </div>
+        <p>👉 <a href="https://github.com/AntonyGZ?tab=repositories" target="_blank">Ver todos los repositorios</a></p>
+    </section>
+
     <section id="home">
         <h2>👋 Bienvenido</h2>
         <p>Hola, soy Antony Gómez. Estudiante de Ingeniería de Sistemas apasionado por la tecnología y la programación. Aquí comparto mis proyectos, ideas y aprendizajes. ¡Explora y conecta conmigo!</p>
@@ -197,13 +242,18 @@ input[type="text"] {
 
     <section id="about">
         <h2>📌 Sobre mí</h2>
+        <p>Me encuentro en constante aprendizaje, desarrollando proyectos personales y académicos relacionados con software, automatización y análisis técnico para trading. Mi objetivo es crear soluciones prácticas y accesibles para usuarios y empresas.</p>
+
+        <!-- Agregar la sección de Trading dentro de "Acerca de mí" -->
         <div class="sub-box">
-            <p>Me encuentro en constante aprendizaje, desarrollando proyectos personales y académicos relacionados con software, automatización y análisis técnico para trading. Estoy explorando el mundo del trading, con proyectos futuros donde podré compartir lo aprendido y ayudar a otros en su camino, todo con la visión de crecer profesionalmente en estos campos.</p>
-        </div>
-        <h3>🔗 Mi Interés en el Trading</h3>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/oxRcFzq10kQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/d97JdIq4rmc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>📊 Trading: Mi Interés</h3>
+            <p>El análisis técnico y el trading son una de mis grandes pasiones. Actualmente, estoy estudiando estos temas y aplicando técnicas para tomar decisiones en el mercado financiero. A través de herramientas como gráficos y estadísticas, busco entender los patrones y las mejores oportunidades de inversión. ¡Espero seguir aprendiendo y compartir más sobre este emocionante campo!</p>
+
+            <!-- Agregar los videos de trading dentro del subcuadro -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/oxRcFzq10kQ" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/d97JdIq4rmc" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
@@ -227,51 +277,26 @@ input[type="text"] {
     </section>
 
     <section>
-        <h2>🚀 Repositorios Destacados</h2>
-        <div class="repo-container" id="repos-list">
-            <p>Cargando repositorios...</p>
-        </div>
-        <p>👉 <a href="https://github.com/AntonyGZ?tab=repositories" target="_blank">Ver todos los repositorios</a></p>
-    </section>
-
-    <section id="contact">
         <h2>📬 Contacto y Redes Sociales</h2>
-        <div class="social-links">
-            <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        </div>
+        <a href="#socials" class="socials-link">Ir a mis redes sociales</a>
     </section>
 </main>
 
-<footer>
-    <div class="footer-icons">
-        <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p>💡 Desarrollado con Jekyll y GitHub Pages por Antony Gomez</p>
-</footer>
-
 <script>
-    async function loadRepos() {
-        const response = await fetch('https://api.github.com/users/AntonyGZ/repos');
-        const repos = await response.json();
-        const reposList = document.getElementById('repos-list');
-        reposList.innerHTML = '';
-
-        // Limitar a 6 repositorios, excluyendo 'AntonyGZ' y 'Codelab'
-        const filteredRepos = repos.filter(repo => repo.name !== 'AntonyGZ' && repo.name !== 'Codelab');
-
-        filteredRepos.slice(0, 6).forEach(repo => {
-            const div = document.createElement('div');
-            div.className = 'repo-card';
-            div.innerHTML = `
-                <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                <p>${repo.description || 'Sin descripción'}</p>
-            `;
-            reposList.appendChild(div);
-        });
-    }
-    loadRepos();
+    // Cargar repositorios de GitHub
+    fetch('https://api.github.com/users/AntonyGZ/repos')
+        .then(response => response.json())
+        .then(data => {
+            const reposList = document.getElementById('repos-list');
+            data.forEach(repo => {
+                const repoCard = document.createElement('div');
+                repoCard.className = 'repo-card';
+                repoCard.innerHTML = `
+                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                    <p>${repo.description || 'Este repositorio es parte de mis proyectos en desarrollo y experimentación.'}</p>
+                `;
+                reposList.appendChild(repoCard);
+            });
+        })
+        .catch(error => console.log('Error fetching repositories:', error));
 </script>
