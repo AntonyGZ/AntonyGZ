@@ -175,6 +175,11 @@ input[type="text"] {
     border-radius: 10px;
     margin-top: 20px;
 }
+
+/* Agregar un estilo de desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
 </style>
 
 <header>
@@ -226,6 +231,12 @@ input[type="text"] {
         <div class="sub-box">
             <h3>📊 Trading: Mi Interés</h3>
             <p>El análisis técnico y el trading son una de mis grandes pasiones. Actualmente, estoy estudiando estos temas y aplicando técnicas para tomar decisiones en el mercado financiero. A través de herramientas como gráficos y estadísticas, busco entender los patrones y las mejores oportunidades de inversión. ¡Espero seguir aprendiendo y compartir más sobre este emocionante campo!</p>
+
+            <!-- Agregar los videos de trading dentro del subcuadro -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/oxRcFzq10kQ" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/d97JdIq4rmc" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
@@ -258,9 +269,7 @@ input[type="text"] {
 
     <section>
         <h2>📬 Contacto y Redes Sociales</h2>
-        <div class="social-links">
-            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        </div>
+        <a href="#socials" class="socials-link">Ir a mis redes sociales</a>
     </section>
 </main>
 
@@ -275,7 +284,7 @@ input[type="text"] {
                 repoCard.className = 'repo-card';
                 repoCard.innerHTML = `
                     <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                    <p>${repo.description || 'No description available'}</p>
+                    <p>${repo.description || 'Este repositorio es parte de mis proyectos en desarrollo y experimentación.'}</p>
                 `;
                 reposList.appendChild(repoCard);
             });
