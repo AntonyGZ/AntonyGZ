@@ -227,6 +227,7 @@ html {
         <input type="text" placeholder="Buscar en la página...">
     </div>
 
+    <!-- Mover "Bienvenido" arriba -->
     <section id="home">
         <h2>👋 Bienvenido</h2>
         <p>Hola, soy Antony Gómez. Estudiante de Ingeniería de Sistemas apasionado por la tecnología y la programación. Aquí comparto mis proyectos, ideas y aprendizajes. ¡Explora y conecta conmigo!</p>
@@ -248,42 +249,94 @@ html {
         <div class="sub-box">
             <h3>📊 Trading: Mi Interés</h3>
             <p>El análisis técnico y el trading son una de mis grandes pasiones. Actualmente, estoy estudiando estos temas y aplicando técnicas para tomar decisiones en el mercado financiero. A través de herramientas como gráficos y estadísticas, busco entender los patrones y las mejores oportunidades de inversión. ¡Espero seguir aprendiendo y compartir más sobre este emocionante campo!</p>
-
-            <!-- Agregar los videos de trading dentro del subcuadro -->
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/oxRcFzq10kQ" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/d97JdIq4rmc" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
         </div>
     </section>
 
     <section id="categories">
         <h2>🗂️ Categorías</h2>
         <ul>
-            <li><a href="#software-development">Desarrollo de Software</a></li>
-                        <li><a href="#trading">Análisis Técnico de Trading</a></li>
-            <li><a href="#proyectos">Proyectos Personales</a></li>
-            <li><a href="#academia">Academia</a></li>
-            <li><a href="#tutoriales">Tutoriales</a></li>
-            <li><a href="#ideas">Ideas y Conceptos</a></li>
+            <li><a href="#software">Desarrollo de Software</a></li>
+            <li><a href="#trading">Análisis Técnico de Trading</a></li>
+            <li><a href="#automacion">Automatización</a></li>
+            <li><a href="#innovacion">Proyectos de Innovación</a></li>
         </ul>
     </section>
 
     <section id="posts">
         <h2>📝 Posts Destacados</h2>
         <div class="repo-container">
-            <!-- Aquí se mostrarán los posts si se agregan dinámicamente más tarde -->
+            <div class="repo-card">
+                <h3><a href="#">Cómo empecé en el desarrollo web</a></h3>
+                                <p>En este post comparto mi experiencia comenzando en el mundo del desarrollo web, las herramientas que utilicé, y cómo aprendí a construir aplicaciones web modernas.</p>
+            </div>
+            <div class="repo-card">
+                <h3><a href="#">Introducción al análisis técnico</a></h3>
+                <p>Un análisis profundo de cómo iniciarse en el análisis técnico para trading. Explico los principios básicos, patrones y herramientas más comunes utilizadas en los mercados financieros.</p>
+            </div>
+            <div class="repo-card">
+                <h3><a href="#">Automatización con Python</a></h3>
+                <p>Este post cubre los conceptos básicos de la automatización utilizando Python. Veremos ejemplos prácticos de cómo escribir scripts que realicen tareas de manera automática.</p>
+            </div>
+            <div class="repo-card">
+                <h3><a href="#">Proyectos de Innovación y Tecnología</a></h3>
+                <p>Un vistazo a proyectos de innovación que he desarrollado, con énfasis en cómo la tecnología puede transformar industrias tradicionales.</p>
+            </div>
         </div>
     </section>
 
 </main>
 
 <footer>
-    <p>&copy; 2025 Antony Gomez. Todos los derechos reservados.</p>
-    <div class="social-links">
-        <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
+    <p>&copy; 2025 Antony Gómez. Todos los derechos reservados.</p>
 </footer>
+
+<script>
+    // Llenado de repositorios destacados
+    const repos = [
+        {
+            name: "Sistema de Socios Mass",
+            description: "Un sistema para gestionar los socios y promociones de una tienda.",
+            link: "https://github.com/AntonyGZ/Sistema-Socios-Mass"
+        },
+        {
+            name: "Trading Analysis Tool",
+            description: "Una herramienta para realizar análisis técnico en el mercado financiero.",
+            link: "https://github.com/AntonyGZ/Trading-Analysis-Tool"
+        },
+        {
+            name: "Gestión de Tareas",
+            description: "Aplicación para gestionar tareas personales y profesionales.",
+            link: "https://github.com/AntonyGZ/Gestion-de-Tareas"
+        },
+        {
+            name: "E-commerce App",
+            description: "Una aplicación de comercio electrónico para gestionar productos y ventas.",
+            link: "https://github.com/AntonyGZ/E-commerce-App"
+        },
+        {
+            name: "Automatización con Python",
+            description: "Un conjunto de scripts para automatizar tareas diarias en Python.",
+            link: "https://github.com/AntonyGZ/Automatizacion-con-Python"
+        },
+        {
+            name: "Blog de Tecnología",
+            description: "Un blog donde comparto artículos sobre desarrollo de software, automatización, y más.",
+            link: "https://github.com/AntonyGZ/Blog-de-Tecnologia"
+        }
+    ];
+
+    const repoContainer = document.getElementById("repos-list");
+
+    repos.forEach(repo => {
+        const repoCard = document.createElement("div");
+        repoCard.classList.add("repo-card");
+        repoCard.innerHTML = `
+            <h3><a href="${repo.link}" target="_blank">${repo.name}</a></h3>
+            <p>${repo.description}</p>
+        `;
+        repoContainer.appendChild(repoCard);
+    });
+</script>
+
+</body>
+</html>
