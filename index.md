@@ -305,6 +305,7 @@ Mi objetivo es colaborar con personas que también estén interesadas en aprende
                 repoCard.className = 'repo-card';
                 repoCard.innerHTML = `
                     <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                    <p>${repo.description || ''}</p>
                 `;
                 reposList.appendChild(repoCard);
             });
