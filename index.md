@@ -1,5 +1,3 @@
-CODIGO 3
-
 ---
 layout: default
 title: Antony Gomez
@@ -169,6 +167,14 @@ input[type="text"] {
     border: none;
     font-size: 1em;
 }
+
+/* Estilo para el cuadro adicional en la sección de "Acerca de mí" */
+.sub-box {
+    background-color: #34495e;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 </style>
 
 <header>
@@ -215,6 +221,12 @@ input[type="text"] {
     <section id="about">
         <h2>📌 Sobre mí</h2>
         <p>Me encuentro en constante aprendizaje, desarrollando proyectos personales y académicos relacionados con software, automatización y análisis técnico para trading. Mi objetivo es crear soluciones prácticas y accesibles para usuarios y empresas.</p>
+
+        <!-- Agregar la sección de Trading dentro de "Acerca de mí" -->
+        <div class="sub-box">
+            <h3>📊 Trading: Mi Interés</h3>
+            <p>El análisis técnico y el trading son una de mis grandes pasiones. Actualmente, estoy estudiando estos temas y aplicando técnicas para tomar decisiones en el mercado financiero. A través de herramientas como gráficos y estadísticas, busco entender los patrones y las mejores oportunidades de inversión. ¡Espero seguir aprendiendo y compartir más sobre este emocionante campo!</p>
+        </div>
     </section>
 
     <section id="categories">
@@ -228,15 +240,10 @@ input[type="text"] {
     </section>
 
     <section id="trading">
-        <h2>📊 Análisis Técnico y Trading</h2>
-        <p>El análisis técnico y el trading son una de mis grandes pasiones. Actualmente, estoy estudiando estos temas y aplicando técnicas para tomar decisiones en el mercado financiero. A través de herramientas como gráficos y estadísticas, busco entender los patrones y las mejores oportunidades de inversión. ¡Espero seguir aprendiendo y compartir más sobre este emocionante campo!</p>
-    </section>
-
-    <section id="videos">
-        <h2>📺Trading</h2>
+        <h2>📺 Videos sobre Trading</h2>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/watch?v=d97JdIq4rmc" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/watch?v=oxRcFzq10kQ" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/oxRcFzq10kQ" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/d97JdIq4rmc" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
