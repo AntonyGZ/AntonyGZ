@@ -1,3 +1,5 @@
+CODIGO 3
+
 ---
 layout: default
 title: Antony Gomez
@@ -6,17 +8,16 @@ title: Antony Gomez
 <head>
     <!-- Agregar Font Awesome para los íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Tipografía moderna y profesional -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Agregar Google Fonts: Montserrat Regular -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Inter:wght@400;600&display=swap'); /* Tipografía profesional */
-
+/* Cambiar la tipografía global a Montserrat Regular */
 body {
     background: linear-gradient(135deg, #4E6B8E, #A1C4E8); /* Fondo profesional con gradiente */
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Aplicar Montserrat Regular a todo el cuerpo */
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -28,12 +29,10 @@ header {
     justify-content: space-between;
     padding: 30px;
     background-color: #2c3e50;
-    position: fixed;
-    top: 0;
     width: 100%;
     z-index: 10;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
+    position: relative;
 }
 
 .profile-info {
@@ -42,6 +41,7 @@ header {
     flex-direction: column;
     text-align: center;
     max-width: 300px;
+    margin-right: 50px; /* Asegurar espacio entre la imagen de perfil y el menú */
 }
 
 .profile-info img {
@@ -88,7 +88,7 @@ header {
 }
 
 main {
-    padding-top: 160px; /* Ajustamos el contenido principal para que no se superponga al header fijo */
+    padding-top: 160px; /* Ajustamos el contenido principal para que no se superponga al header */
 }
 
 section {
@@ -233,10 +233,10 @@ input[type="text"] {
     </section>
 
     <section id="videos">
-        <h2>📺 Videos sobre Trading</h2>
+        <h2>📺Trading</h2>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/7qglzFYh0Jo" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/kz-vjY9FGwI" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/watch?v=d97JdIq4rmc" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/watch?v=oxRcFzq10kQ" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
