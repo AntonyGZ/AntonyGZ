@@ -197,11 +197,6 @@ html {
     color: #fff;
 }
 
-.header-logo {
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
-}
 </style>
 
 <header>
@@ -225,7 +220,6 @@ html {
         <a href="#about"><i class="fas fa-user"></i> About</a>
         <a href="#posts"><i class="fas fa-file-alt"></i> Posts</a>
     </div>
-    <img src="https://example.com/logo.png" alt="Logo" class="header-logo"> <!-- Imagen agregada -->
 </header>
 
 <main>
@@ -268,36 +262,4 @@ html {
         <ul>
             <li>Desarrollo de Software</li>
             <li>Análisis Técnico de Trading</li>
-            <li>Automatización</li>
-            <li>Proyectos de Innovación</li>
-        </ul>
-    </section>
-
-    <section id="posts">
-        <h2>📝 Posts Destacados</h2>
-        <ul>
-            <li><a href="#">Cómo empecé en el desarrollo web</a></li>
-            <li><a href="#">Proyectos académicos que marcaron mi camino</a></li>
-            <li><a href="#">Mis herramientas favoritas para desarrollo y análisis</a></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>📬 Contacto y Redes Sociales</h2>
-        <div class="social-links">
-            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 Antony Gómez. Todos los derechos reservados.</p>
-</footer>
-
-<!-- Scripts para los iconos de redes sociales -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-</body>
-</html>
+            <li
