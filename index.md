@@ -3,7 +3,6 @@ layout: default
 title: "Antony GZ"
 ---
 
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
