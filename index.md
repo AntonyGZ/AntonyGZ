@@ -4,18 +4,15 @@ title: Antony Gomez
 ---
 
 <head>
-    <!-- Agregar Font Awesome para los íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Agregar Google Fonts: Montserrat Regular -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <style>
-/* Cambiar la tipografía global a Montserrat Regular */
 body {
-    background: linear-gradient(135deg, #4E6B8E, #A1C4E8); /* Fondo profesional con gradiente */
+    background: linear-gradient(135deg, #4E6B8E, #A1C4E8);
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif; /* Aplicar Montserrat Regular a todo el cuerpo */
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -39,7 +36,7 @@ header {
     flex-direction: column;
     text-align: center;
     max-width: 300px;
-    margin-right: 50px; /* Asegurar espacio entre la imagen de perfil y el menú */
+    margin-right: 50px;
 }
 
 .profile-info img {
@@ -86,7 +83,7 @@ header {
 }
 
 main {
-    padding-top: 160px; /* Ajustamos el contenido principal para que no se superponga al header */
+    padding-top: 160px;
 }
 
 section {
@@ -156,7 +153,6 @@ input[type="text"] {
     font-size: 1em;
 }
 
-/* Estilo para el cuadro adicional en la sección de "Acerca de mí" */
 .sub-box {
     background-color: #34495e;
     padding: 15px;
@@ -164,12 +160,10 @@ input[type="text"] {
     margin-top: 20px;
 }
 
-/* Agregar un estilo de desplazamiento suave */
 html {
     scroll-behavior: smooth;
 }
 
-/* Estilos para las pestañas con íconos */
 .nav-links a {
     font-size: 1.2em;
     display: flex;
@@ -182,7 +176,6 @@ html {
     margin-bottom: 5px;
 }
 
-/* Estilos de los títulos de los repositorios */
 .repo-card h3 a {
     color: #f1c40f;
     text-decoration: none;
@@ -192,7 +185,6 @@ html {
     color: #fff;
 }
 
-/* Estilo para los íconos de las pestañas */
 .nav-links a:hover {
     color: #fff;
 }
@@ -219,7 +211,6 @@ footer .social-links a:hover {
         <div>
             <h1>Antony Gomez</h1>
             <p>Ingeniero de Sistemas | Desarrollador de Software | Entusiasta de la tecnología</p>
-            <!-- Redes sociales debajo de la foto -->
             <div class="social-links">
                 <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -244,7 +235,6 @@ footer .social-links a:hover {
     <section id="repos">
         <h2>🚀 Repositorios Destacados</h2>
         <div class="repo-container" id="repos-list">
-            <!-- Los repositorios de GitHub se cargarán dinámicamente aquí -->
         </div>
         <p>👉 <a href="https://github.com/AntonyGZ?tab=repositories" target="_blank">Ver todos los repositorios</a></p>
     </section>
@@ -260,12 +250,10 @@ footer .social-links a:hover {
 Mi enfoque principal es la creación de soluciones innovadoras a través de código, pero también soy un entusiasta del trading, un campo que he comenzado a explorar con curiosidad y dedicación. A través del aprendizaje continuo, estoy perfeccionando mis habilidades para comprender y aplicar estrategias financieras, lo que me permite combinar mi pasión por la tecnología con nuevas oportunidades de crecimiento profesional.
 Mi objetivo es colaborar con personas que también estén interesadas en aprender y desarrollar juntos, enfrentando proyectos que nos permitan crecer como profesionales, compartir ideas y construir soluciones que realmente marquen la diferencia. Si buscas a alguien comprometido, curioso y con muchas ganas de aprender y enseñar, ¡me encantaría conectar contigo!</p>
 
-        <!-- Agregar la sección de Trading dentro de "Acerca de mí" -->
         <div class="sub-box">
             <h3>📊 Trading: Mi Interés</h3>
             <p>El análisis técnico y el trading son una de mis grandes pasiones. Actualmente, estoy estudiando estos temas y aplicando técnicas para tomar decisiones en el mercado financiero. A través de herramientas como gráficos y estadísticas, busco entender los patrones y las mejores oportunidades de inversión. ¡Espero seguir aprendiendo y compartir más sobre este emocionante campo!</p>
 
-            <!-- Agregar los videos de trading dentro del subcuadro -->
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/oxRcFzq10kQ" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe src="https://www.youtube.com/embed/d97JdIq4rmc" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -308,7 +296,6 @@ Mi objetivo es colaborar con personas que también estén interesadas en aprende
 </footer>
 
 <script>
-    // Cargar repositorios de GitHub
     fetch('https://api.github.com/users/AntonyGZ/repos')
         .then(response => response.json())
         .then(data => {
