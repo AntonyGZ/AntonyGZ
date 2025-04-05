@@ -36,6 +36,8 @@ header {
 
 .nav-links {
     text-align: right;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links a {
@@ -47,6 +49,13 @@ header {
 
 .nav-links a:hover {
     text-decoration: underline;
+}
+
+/* Imagen o icono agregado junto a las pestañas */
+.nav-links img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
 }
 
 .main {
@@ -167,6 +176,8 @@ input[type="text"] {
         </div>
     </div>
     <div class="nav-links">
+        <!-- Imagen o ícono agregado aquí -->
+        <img src="https://via.placeholder.com/40" alt="Icono de Página">
         <a href="#home"><i class="fas fa-home"></i> Home</a>
         <a href="#about"><i class="fas fa-user"></i> About</a>
         <a href="#categories"><i class="fas fa-list"></i> Categories</a>
@@ -226,7 +237,6 @@ input[type="text"] {
     <section id="contact">
         <h2>📬 Contacto y Redes Sociales</h2>
         <div class="social-links">
-            <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -236,7 +246,6 @@ input[type="text"] {
 
 <footer>
     <div class="footer-icons">
-        <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
         <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
         <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -251,7 +260,10 @@ input[type="text"] {
         const reposList = document.getElementById('repos-list');
         reposList.innerHTML = '';
 
-        repos.slice(0, 6).forEach(repo => {
+        // Limitar a 6 repositorios, excluyendo 'AntonyGZ' y 'Codelab'
+        const filteredRepos = repos.filter(repo => repo.name !== 'AntonyGZ' && repo.name !== 'Codelab');
+
+        filteredRepos.slice(0, 6).forEach(repo => {
             const div = document.createElement('div');
             div.className = 'repo-card';
             div.innerHTML = `
