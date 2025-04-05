@@ -209,7 +209,7 @@ footer .social-links a:hover {
     <div class="profile-info">
         <img src="https://github.com/AntonyGZ.png" alt="Foto de perfil">
         <div>
-            <h1></h1>
+            <h1>Antony Gomez</h1>
             <p>Ingeniero de Sistemas | Desarrollador de Software | Entusiasta de la tecnología</p>
             <div class="social-links">
                 <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
@@ -296,7 +296,7 @@ Mi objetivo es colaborar con personas que también estén interesadas en aprende
 </footer>
 
 <script>
-    fetch('https://api.github.com/users/AntonyGZ/repos')
+    fetch('https://api.github.com/users/AntonyGZ/')
         .then(response => response.json())
         .then(data => {
             const reposList = document.getElementById('repos-list');
@@ -305,7 +305,7 @@ Mi objetivo es colaborar con personas que también estén interesadas en aprende
                 repoCard.className = 'repo-card';
                 repoCard.innerHTML = `
                     <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                    <p>${repo.description || ''}</p>
+                    <p>${repo.description ||}</p>
                 `;
                 reposList.appendChild(repoCard);
             });
