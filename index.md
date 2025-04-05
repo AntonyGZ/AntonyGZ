@@ -213,7 +213,7 @@ footer .social-links a:hover {
             <p>Ingeniero de Sistemas | Desarrollador de Software | Entusiasta de la tecnología</p>
             <div class="social-links">
                 <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:60450594@continental.edu.pe"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
@@ -296,7 +296,7 @@ Mi objetivo es colaborar con personas que también estén interesadas en aprende
 </footer>
 
 <script>
-    fetch('https://api.github.com/users/AntonyGZ/')
+    fetch('https://api.github.com/users/AntonyGZ/repos')
         .then(response => response.json())
         .then(data => {
             const reposList = document.getElementById('repos-list');
@@ -305,7 +305,7 @@ Mi objetivo es colaborar con personas que también estén interesadas en aprende
                 repoCard.className = 'repo-card';
                 repoCard.innerHTML = `
                     <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                    <p>${repo.description ||}</p>
+                    <p>${repo.description || 'Este repositorio es parte de mis proyectos en desarrollo y experimentación.'}</p>
                 `;
                 reposList.appendChild(repoCard);
             });
