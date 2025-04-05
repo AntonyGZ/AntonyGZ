@@ -287,4 +287,17 @@ html {
         <div class="social-links">
             <a href="https://github.com/AntonyGZ" target="_blank"><i class="fab fa-github"></i></a>
             <a href="mailto:antonygomez0512@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://wa
+                        <a href="https://wa.me/51991200117" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/antony-gomez-2b0155291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Antony Gómez. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Scripts para los iconos de redes sociales -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
