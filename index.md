@@ -120,18 +120,6 @@ section h2 {
     transform: translateY(-5px);
 }
 
-.video-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.video-container iframe {
-    width: 48%;
-    border-radius: 10px;
-}
-
 footer {
     text-align: center;
     padding: 20px;
@@ -180,6 +168,35 @@ input[type="text"] {
 html {
     scroll-behavior: smooth;
 }
+
+/* Estilos para las pestañas con íconos */
+.nav-links a {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links a i {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+/* Estilos de los títulos de los repositorios */
+.repo-card h3 a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.repo-card h3 a:hover {
+    color: #fff;
+}
+
+/* Estilo para los íconos de las pestañas */
+.nav-links a:hover {
+    color: #fff;
+}
+
 </style>
 
 <header>
@@ -198,10 +215,10 @@ html {
         </div>
     </div>
     <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#categories">Categories</a>
-        <a href="#posts">Posts</a>
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="#categories"><i class="fas fa-th"></i> Categories</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#posts"><i class="fas fa-file-alt"></i> Posts</a>
     </div>
 </header>
 
@@ -248,14 +265,6 @@ html {
             <li>Automatización</li>
             <li>Proyectos de Innovación</li>
         </ul>
-    </section>
-
-    <section id="trading">
-        <h2>📺 Videos sobre Trading</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/oxRcFzq10kQ" title="Video 1 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/d97JdIq4rmc" title="Video 2 sobre Trading" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
     </section>
 
     <section id="posts">
